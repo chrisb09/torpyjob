@@ -112,6 +112,7 @@ class TorJobLib:
         self.lock.acquire()
         size = len(self.task_queue)
         self.lock.release()
+        return size
 
     def is_running(self):
         return not self.stop
