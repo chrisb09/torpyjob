@@ -31,7 +31,7 @@ This [script](install_torpy.sh) downloads and installs the modified torpy versio
 It's a library, so you should use it in your own project.
 You can run a simple example by calling `python3 torpyjob` if you installed it or `python3 torpyjob/api.py` if you didn't.
 
-In your code, import TorJobLib from api.py.
+In your code, import TorJobLib from torpyjob.
 
 ```python
 from torpyjob import TorJobLib
@@ -99,7 +99,7 @@ print("Running test-job...")
 amount_of_dummy_tasks = 5
 print("Creating "+str(amount_of_dummy_tasks)+" tasks...")
 
-# Creates a new TorJobLib object and schedules three dummy tasks to execute.
+# Creates a new TorJobLib object and schedules dummy tasks to execute.
 tjl = TorJobLib()
 
 for i in range(amount_of_dummy_tasks):
